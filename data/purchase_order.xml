@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- xsi:noNamespaceSchemaLocation="invoice.xsd" -->
+<invoices>
+<invoice>
+    <id>1</id>
+    <customerId>123</customerId>
+    <date>2023-01-30</date>
+    <status>paid</status><!-- draft, notPaid -->
+    
+    <items>
+        <item>
+            <productId>101</productId>
+            <name>Product 1</name>
+            <quantity>2</quantity>
+            <price>50.00</price>
+        </item>
+        <item>
+            <productId>102</productId>
+            <name>Product 2</name>
+            <quantity>1</quantity>
+            <price>100.00</price>
+        </item>
+    </items>
+    <total>200.00</total>
+</invoice>
+
+</invoices>

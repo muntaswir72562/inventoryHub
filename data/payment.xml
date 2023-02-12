@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- xsi:noNamespaceSchemaLocation="payment.xsd" -->
+<payments>
+    <payment>
+        <date>12/02/2023</date>
+        <supplierName>Nike</supplierName>
+        <invoice id="1"></invoice>
+        <amount>50000</amount>
+        <status>paid</status><!-- complete, pending -->
+        <paymentType>cash</paymentType> <!-- cheque, internet banking -->
+       
+    </payment>
+    
+</payments>
