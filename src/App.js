@@ -1,22 +1,17 @@
 import { Typography } from "@mui/material";
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
-
+import {Routes, Route} from "react-router-dom";
+import Invoice from "../src/components/invoice"
 function App() {
   return (
-    <Router>
+  
     <div className="App">
-      <Typography variant="h1">hello world</Typography>
-    
-    <Switch>
-      <Route exact path="/">
-      <Typography variant="h1">This is the home page</Typography>
-      </Route>
-      <Route path="/invoice">
-      <Typography variant="h1">This is the invoice page</Typography>
-      </Route>
-    </Switch>
+      {/* <Typography variant="h1">hello world</Typography> */}
+      <Routes>
+      {/* <Route path ="/" element={<dashboard/>}/> */}
+      <Route path ="/invoice" element={<Invoice/>}/>
+    </Routes>
     </div>
-    </Router>
+    
     
   );
 }
