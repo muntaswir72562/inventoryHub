@@ -1,0 +1,53 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Suppliers">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Supplier" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="short_code">
+                                <xs:complexType>
+                                    <xs:attribute name="code" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="supplier_information">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="first_name" type="xs:string"/>
+                                        <xs:element name="last_name" type="xs:string"/>
+                                        <xs:element name="dob" type="xs:string"/>
+                                        <xs:element name="email" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="contact_details">
+                                <xs:complexType>
+                                    <xs:choice>
+                                        <xs:sequence>
+                                            <xs:element name="phone_number" type="xs:string"/>
+                                            <xs:element name="office_number" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                                            <xs:element name="fax" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                                        </xs:sequence>
+                                    </xs:choice>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="company_information">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="brn" type="xs:string"/>
+                                        <xs:element name="company_name" type="xs:string"/>
+                                        <xs:element name="address" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="vat" type="xs:string"/>
+                            <xs:element name="vatable" type="xs:boolean"/>
+                            <xs:element name="payment_terms" type="xs:string"/>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
