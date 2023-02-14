@@ -1,16 +1,15 @@
 import { useState } from "react";
-import { ProSideBar, Menu, MenuItem } from "react-pro-sidebar";
-import { Box } from "@mui/material";
+import { ProSidebarProvider, Menu, MenuItem } from "react-pro-sidebar";
+import { Box, Typography } from "@mui/material";
+import AccessibilityNewIcon from "@mui/icons-material/AccessibilityNew";
 
 const Sidebar = () => {
   return (
-    <Box
-      sx={{
-        backgroundColor: "red",
-      }}
-    >
-      hello
-    </Box>
+    <ProSidebarProvider>
+      <Box>
+        <Typography>hello </Typography>
+      </Box>
+    </ProSidebarProvider>
   );
 };
 
