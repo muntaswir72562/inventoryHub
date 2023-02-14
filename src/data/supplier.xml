@@ -1,7 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <Suppliers>
-    <Supplie id="1">
-        <short_code code="S31"/>        <supplier_information>
+    <Supplier id="1">
+        <short_code code="S31"/>
+        <supplier_information>
             <first_name>Jobie</first_name>
             <last_name>Lydster</last_name>
             <dob>09/04/2004</dob>
@@ -20,8 +21,8 @@
         <vat>39-503-4735</vat>
         <vatable>true</vatable>
         <payment_terms>cash</payment_terms>
-    </Supplie>
-    <Supplie id="2">
+    </Supplier>
+    <Supplier id="2">
         <short_code code="S63"/>
         <supplier_information>
             <first_name>Gates</first_name>
@@ -42,8 +43,8 @@
         <vat>56-536-1050</vat>
         <vatable>false</vatable>
         <payment_terms>internet banking</payment_terms>
-    </Supplie>
-    <Supplie id="3">
+    </Supplier>
+    <Supplier id="3">
         <short_code code="S74"/>
         <supplier_information>
             <first_name>Hunter</first_name>
@@ -64,9 +65,10 @@
         <vat>84-969-9500</vat>
         <vatable>false</vatable>
         <payment_terms>cheque</payment_terms>
-    </Supplie>
-    <Supplie id="4">
-        <short_code code="S27"/>        <supplier_information>
+    </Supplier>
+    <Supplier id="4">
+        <short_code code="S27"/>
+        <supplier_information>
             <first_name>Charlotta</first_name>
             <last_name>Chadburn</last_name>
             <dob>15/12/2009</dob>
@@ -85,8 +87,8 @@
         <vat>11-081-0037</vat>
         <vatable>true</vatable>
         <payment_terms>internet banking</payment_terms>
-    </Supplie>
-    <Supplie id="5">
+    </Supplier>
+    <Supplier id="5">
         <short_code code="S74"/>
         <supplier_information>
             <first_name>Wilt</first_name>
@@ -107,8 +109,8 @@
         <vat>84-731-1433</vat>
         <vatable>true</vatable>
         <payment_terms>cash</payment_terms>
-    </Supplie>
-    <Supplie id="6">
+    </Supplier>
+    <Supplier id="6">
         <short_code code="S50"/>
         <supplier_information>
             <first_name>Xenia</first_name>
@@ -129,8 +131,8 @@
         <vat>59-523-0366</vat>
         <vatable>true</vatable>
         <payment_terms>cash</payment_terms>
-    </Supplie>
-    <Supplie id="7">
+    </Supplier>
+    <Supplier id="7">
         <short_code code="S31"/>
         <supplier_information>
             <first_name>Malvina</first_name>
@@ -151,8 +153,8 @@
         <vat>27-556-5434</vat>
         <vatable>false</vatable>
         <payment_terms>internet banking</payment_terms>
-    </Supplie>
-    <Supplie id="8">
+    </Supplier>
+    <Supplier id="8">
         <short_code code="S87"/>
         <supplier_information>
             <first_name>Windham</first_name>
@@ -173,8 +175,8 @@
         <vat>90-977-3028</vat>
         <vatable>false</vatable>
         <payment_terms>internet banking</payment_terms>
-    </Supplie>
-    <Supplie id="9">
+    </Supplier>
+    <Supplier id="9">
         <short_code code="S51"/>
         <supplier_information>
             <first_name>Constantine</first_name>
@@ -195,7 +197,7 @@
         <vat>41-222-5190</vat>
         <vatable>false</vatable>
         <payment_terms>cash</payment_terms>
-    </Supplie>
+    </Supplier>
     <Supplier id="10">
         <short_code code="S510"/>
         <supplier_information>
