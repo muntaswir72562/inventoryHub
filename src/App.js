@@ -2,6 +2,7 @@ import { Typography } from "@mui/material";
 import {Routes, Route} from "react-router-dom";
 import Sidebar from "../src/pages/global/Sidebar"
 import Invoice from "../src/components/invoice"
+
 function App() {
   return (
     
@@ -11,7 +12,6 @@ function App() {
         <Routes>
           <Route exact path="/" />
           <Route path="/invoice" element={<Invoice/>}/>
-            
         </Routes>
       </div>
   );
