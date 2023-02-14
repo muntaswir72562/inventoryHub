@@ -1,8 +1,9 @@
+import { Typography } from "@mui/material";
+
 function App() {
   return (
     <div className="App">
-      <h1 className="text-red-500">hello</h1>
-      <h2>This is heading 2</h2>
+      <Typography variant="h1">hello world</Typography>
     </div>
   );
 }
