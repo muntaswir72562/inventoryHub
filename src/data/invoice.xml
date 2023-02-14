@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- xsi:noNamespaceSchemaLocation="invoice.xsd" -->
-<invoices>
-<invoice>
-    <id>1</id>
-    <customerId>123</customerId>
+<invoices xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="invoice.xsd">
+<invoice id="inv001">
+    <supplierId>123</supplierId>
     <date>2023-01-30</date>
-    <status>paid</status><!-- draft, notPaid -->
-    
+    <status>paid</status>
     <items>
         <item>
             <productId>101</productId>
