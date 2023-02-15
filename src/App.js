@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Sidebar from "../src/pages/global/Sidebar";
-import Invoice from "../src/components/invoice";
+import Invoice from "./pages/invoice";
 
 function App() {
   return (
