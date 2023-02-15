@@ -1,16 +1,18 @@
-import { useState } from "react";
-import { ProSidebarProvider, Menu, MenuItem } from "react-pro-sidebar";
-import { Box, Typography } from "@mui/material";
-import AccessibilityNewIcon from "@mui/icons-material/AccessibilityNew";
+import { FiBox } from "react-icons/fi";
 
-const Sidebar = () => {
+const SideBar = () => {
   return (
-    <ProSidebarProvider>
-      <Box>
-        <Typography>hello </Typography>
-      </Box>
-    </ProSidebarProvider>
+    <aside className="sidebar w-1/6 bg-red-300">
+      <div className="sidebar__container p-2">
+        <div className="sidebar__header flex items-center">
+          <div className="sidebar__logo m-2">
+            <FiBox />
+          </div>
+          <h3>InventoryHub</h3>
+        </div>
+      </div>
+    </aside>
   );
 };
 
-export default Sidebar;
+export default SideBar;
