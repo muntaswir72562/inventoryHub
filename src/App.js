@@ -5,6 +5,7 @@ import Invoice from "./pages/invoice";
 function App() {
   return (
     <div className="App">
+     
       <Sidebar />
       <Routes>
         <Route exact path="/" />
