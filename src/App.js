@@ -17,7 +17,6 @@ function App() {
           <Route path="/page" element={<Page />} />
         </Routes>
       </div>
-    </div>
   );
 }
 

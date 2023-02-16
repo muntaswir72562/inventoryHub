@@ -1,24 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<invoices xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="invoice.xsd">
+<!---->
+<invoices  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="invoice.xsd" >
 <invoice id="inv001">
-    <supplierId>123</supplierId>
+    <clientId>123</clientId>
+    <name>
+        <firstName>mun</firstName>
+        <lastName>wally</lastName>
+    </name>
+    <address>
+        <streetName>ave cardinal4</streetName>
+        <city>port louis</city>
+        <postalCode>11221</postalCode>
+        <country>Mauritius</country>
+    </address>
     <date>2023-01-30</date>
     <status>paid</status>
-    <items>
-        <item>
-            <productId>101</productId>
-            <name>Product 1</name>
-            <quantity>2</quantity>
-            <price>50.00</price>
-        </item>
-        <item>
-            <productId>102</productId>
-            <name>Product 2</name>
+    <orders>
+        <item id="001">     
+            <name>shoe</name>   
             <quantity>1</quantity>
-            <price>100.00</price>
+            <unitPrice>200.0</unitPrice>    
         </item>
-    </items>
-    <total>200.00</total>
+        <item id="001">     
+            <name>shoe</name>   
+            <quantity>1</quantity>
+            <unitPrice>400.0</unitPrice>    
+        </item>
+    </orders>
+    <total>600.0</total>
 </invoice>
 
 </invoices>
