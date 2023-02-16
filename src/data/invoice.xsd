@@ -9,11 +9,11 @@
 
 <xs:complexType name="itemType">
     <xs:sequence>
-        <xs:element name="productId" type="xs:integer" />
         <xs:element name="name" type="xs:string" />
         <xs:element name="quantity" type="xs:integer" />
-        <xs:element name="price" type="xs:decimal" />
+        <xs:element name="unitPrice" type="xs:decimal" />
     </xs:sequence>
+    <xs:attribute name="id" type="xs:integer" use="required" />
 </xs:complexType>
 
 <xs:simpleType name="stsType">
@@ -22,28 +22,48 @@
     </xs:restriction>
     </xs:simpleType>
 
-<xs:element name="invoices">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element name="invoice" maxOccurs="unbounded">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="supplierId" type="xs:integer" />
-              <xs:element name="date" type="xs:date" />
-              <xs:element name="status" type="stsType" />
-              <xs:element name="items">
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element maxOccurs="unbounded" name="item" type="itemType"/>
-                  </xs:sequence>
-                </xs:complexType>
-              </xs:element>
-              <xs:element name="total" type="xs:decimal" />
-            </xs:sequence>
-            <xs:attribute name="id" type="invType" use="required" />
-          </xs:complexType>
-        </xs:element>
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-</xs:schema>
+    <xs:element name="invoices">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element name="invoice" maxOccurs="unbounded">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="clientId" type="xs:integer" />
+                <xs:element name="name">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="firstName" type="xs:string" />
+                      <xs:element name="lastName" type="xs:string" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="address">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="streetName" type="xs:string" />
+                      <xs:element name="city" type="xs:string" />
+                      <xs:element name="postalCode" type="xs:unsignedShort" />
+                      <xs:element name="country" type="xs:string" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="date" type="xs:date" />
+                <xs:element name="status" type="stsType" />
+                <xs:element name="orders">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element maxOccurs="unbounded" name="item" type="itemType">
+                      </xs:element>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="total" type="xs:decimal" />
+              </xs:sequence>
+              <xs:attribute name="id" type="invType" use="required" />
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  

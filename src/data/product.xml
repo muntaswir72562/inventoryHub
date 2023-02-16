@@ -8,4 +8,18 @@
         <quantity>100</quantity>
         <img src="shoe.jpeg"></img>
     </product>
+    <product id="p001">
+        <title>Shoes</title>
+        <description>This is a shoe</description>
+        <unitPrice>50</unitPrice>
+        <quantity>100</quantity>
+        <img src="shoe.jpeg"></img>
+    </product>
+    <product id="p001">
+        <title>Shoes</title>
+        <description>This is a shoe</description>
+        <unitPrice>50</unitPrice>
+        <quantity>100</quantity>
+        <img src="shoe.jpeg"></img>
+    </product>
 </products>
