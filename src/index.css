@@ -3,3 +3,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.menu__item {
+  @apply my-10;
+}
+.menu__item__logo {
+  @apply mx-5 text-xl text-[#1F7A8C];
+}
+.menu__item__link {
+  @apply flex items-center;
+}
+
+.container {
+  @apply bg-gray-300 w-full my-6 p-3;
+}
