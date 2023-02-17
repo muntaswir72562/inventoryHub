@@ -18,7 +18,7 @@
 
 <xs:simpleType name="stsType">
     <xs:restriction base="xs:string">
-        <xs:pattern value="paid|draft|not paid"/>
+        <xs:pattern value="paid|draft|unpaid"/>
     </xs:restriction>
     </xs:simpleType>
 
