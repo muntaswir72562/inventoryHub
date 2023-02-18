@@ -11,7 +11,7 @@ const Payment = () => {
         "Content-type": "application/json; charset=UTF-8",
       },
     });
-    var data = await response.json();
+    let data = await response.json();
 
     console.log("get", data);
   };
