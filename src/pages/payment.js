@@ -1,75 +1,34 @@
-import { useEffect } from "react";
-
+import { useEffect, useState } from "react";
+import useFetch from "../hooks/useFetch";
+import Header from "../components/header";
 const Payment = () => {
+const [tableData, setTableData] = useState("Loading");
 
-
-  const getName = async () => {
-    const response = await fetch("http://localhost/inventoryphp/test.php", {
-      method: "GET",
-      headers: {
-        "access-control-allow-origin": "*",
-        "Content-type": "application/json; charset=UTF-8",
-      },
-    });
-    let data = await response.json();
-
-    console.log("get", data);
+  const Display = async () => {
+    setTableData(
+      await useFetch("http://localhost/inventoryphp/getPayment.php")
+    );
   };
-
-  async function postData(url = '', data = {}) {
-    // Default options are marked with *
-    const response = await fetch(url, {
-      method: 'POST', // *GET, POST, PUT, DELETE, etc.
-      mode: 'cors', // no-cors, *cors, same-origin
-      cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-      credentials: 'same-origin', // include, *same-origin, omit
-      headers: {
-        'Content-Type': 'application/json'
-        // 'Content-Type': 'application/x-www-form-urlencoded',
-        // 'Content-type': 'multipart/form-data'
-      },
-      redirect: 'follow', // manual, *follow, error
-      referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-      body: JSON.stringify(data) // body data type must match "Content-Type" header
-    });
-    return response.json(); // parses JSON response into native JavaScript objects
-  }
-
-
-
-
-  const postName = async () => {
-
-    postData('http://localhost/inventoryphp/result.php', { answer: 42, name: "test" })
-    .then((data) => {
-      console.log(data); // JSON data parsed by `data.json()` call
-    });
-  
-    
-
-    // const response = await fetch("http://localhost/inventoryphp/result.php", {
-    //   method: "POST",
-    //   headers: {
-    //     "access-control-allow-origin": "*",
-    //     "Content-type": "application/json; charset=UTF-8",
-    //   },
-    //   body: JSON.stringify({
-    //     "name": "Umar",
-    //     "age": "30"
-    // }),
-    // });
-    // var data = await response.json();
-
-    // console.log("post", data);
-  };
-
 
   useEffect(() => {
-    getName();
-    postName();
+    Display();
   }, []);
 
-  return <></>;
+  //useFetch()
+  return (
+    <div>
+      <div className="lg:flex lg:items-center lg:justify-between mx-20">
+        {Header("Payments", "Manage the store's invoice")}
+        <button className="bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg">
+          New Payment
+          {/* <a href="">New invoice</a> */}
+        </button>
+      </div>
+      <div id="paymentTable">
+        {tableData && <div dangerouslySetInnerHTML={{ __html: tableData }} />}
+      </div>
+    </div>
+  );
 };
 
 export default Payment;
