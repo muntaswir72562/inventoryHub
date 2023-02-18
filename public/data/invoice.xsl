@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet version="1.0"
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:template match="/">
-        <!-- <head>
-            <link rel="stylesheet" href="./style/table.css" />
-        </head> -->
-        <div>
+    <div>
             <table>
                 <thead>
                     <tr>
@@ -28,6 +24,7 @@
                             <td>
                                 <xsl:value-of select="name/firstName" />
                                 <xsl:value-of select="name/lastName" />
+                               
                             </td>
                             <td>
                                 <xsl:value-of select="date" />
@@ -69,5 +66,12 @@
 
         </div>
     </xsl:template>
+    <!-- <xsl:template match="invoice/name">
+        <span><xsl:value-of select="name/firstName" /></span>
+        <span> nknk</span>
+        <span><xsl:value-of select="name/lastName" /></span>
+  <br />
+</xsl:template> -->
+
 
 </xsl:stylesheet>
