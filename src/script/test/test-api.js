@@ -14,7 +14,7 @@ const Payment = () => {
     console.log("get", data);
   };
 
-  async function postData(url = "", data = {}) {
+  async function postData(url = "", data) {
     // Default options are marked with *
     const response = await fetch(url, {
       method: "POST", // *GET, POST, PUT, DELETE, etc.
@@ -41,20 +41,6 @@ const Payment = () => {
       console.log(data); // JSON data parsed by `data.json()` call
     });
 
-    // const response = await fetch("http://localhost/inventoryphp/result.php", {
-    //   method: "POST",
-    //   headers: {
-    //     "access-control-allow-origin": "*",
-    //     "Content-type": "application/json; charset=UTF-8",
-    //   },
-    //   body: JSON.stringify({
-    //     "name": "Umar",
-    //     "age": "30"
-    // }),
-    // });
-    // var data = await response.json();
-
-    // console.log("post", data);
   };
 
   useEffect(() => {

@@ -17,7 +17,6 @@ const supplier = () => {
       "<table><tr><th>Short Code</th><th>Company Name</th><th>Phone Number</th><th>Address</th></tr>";
 
     let x = xmlDoc.getElementsByTagName("Supplier");
-    //console.log(x[0].getElementsByTagName("address")[0].childNodes[0].nodeValue)
     for (let i = 0; i < x.length; i++) {
       let row =
         "<tr><td>" +
@@ -35,7 +34,8 @@ const supplier = () => {
       table += row;
     }
     table += "</table>";
-    document.getElementById("supplierTable").innerHTML = table;
+    //document.getElementById("supplierTable").innerHTML = table;
+    document.getElementById("supplierTable").append(table);
   }
   //})
   return (
