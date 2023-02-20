@@ -14,7 +14,6 @@ const [tableData, setTableData] = useState("Loading");
     Display();
   }, []);
 
-  //useFetch()
   return (
     <div>
       <div className="lg:flex lg:items-center lg:justify-between mx-20">
