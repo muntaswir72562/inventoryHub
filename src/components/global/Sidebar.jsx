@@ -15,16 +15,16 @@ const SideBar = () => {
               <SidebarRow path="/" Icon={RxDashboard} title="Dashboard" />
             </li>
             <li className="menu__item">
-              <SidebarRow path="*" Icon={FiShoppingCart} title="Product" />
+              <SidebarRow path="/product" Icon={FiShoppingCart} title="Product" />
             </li>
             <li className="menu__item">
-              <SidebarRow path="*" Icon={IoIosPeople} title="Supplier" />
+              <SidebarRow path="/supplier" Icon={IoIosPeople} title="Supplier" />
             </li>
             <li className="menu__item">
-              <SidebarRow path="*" Icon={MdOutlinePayment} title="Payment" />
+              <SidebarRow path="/payment" Icon={MdOutlinePayment} title="Payment" />
             </li>
             <li className="menu__item">
-              <SidebarRow path="*" Icon={FaFileInvoiceDollar} title="Invoice" />
+              <SidebarRow path="/invoice" Icon={FaFileInvoiceDollar} title="Invoice" />
             </li>
           </ul>
         </div>
