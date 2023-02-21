@@ -2,7 +2,8 @@ import Header from "../components/header";
 import "../style/table.css";
 import { useEffect } from "react";
 const invoice = () => {
-  const xmlUrl = "/data/invoice.xml";
+
+    const xmlUrl = "/data/invoice.xml";
   const xslUrl = "/data/invoice.xsl";
 
   // Load the XML file
@@ -22,12 +23,14 @@ const invoice = () => {
           const xmlDoc = new DOMParser().parseFromString(xml, "text/xml");
           const html = xsltProcessor.transformToFragment(xmlDoc, document);
           // document.getElementById("fetch").innerHTML=html
-
+          document.getElementById("table").innerHTML="";
           // Output the resulting HTMLs
           document.getElementById("table").append(html);
         });
     })
     .catch((error) => console.error(error));
+
+ 
 
   return (
     <div>
