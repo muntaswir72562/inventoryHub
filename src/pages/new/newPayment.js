@@ -4,11 +4,21 @@ const newPayment = () => {
   function sendData(e) {
     e.preventDefault();
     let formData = new FormData(document.getElementById("newPayment"));
+
     postData("http://localhost/inventoryphp/newPayment.php", formData).then(
       (data) => {
-        console.log(data);
+        displayResult(data);
       }
     );
+  }
+
+  function displayResult(data) {
+    let div = document.getElementById("result");
+    if (data == "ok") {
+      div.innerHTML = "<h2 color='green'>data sucessfully inserted</h2>";
+    } else {
+      div.innerHTML = "<h2 color='red'>" + data + "</h2>";
+    }
   }
   return (
     <div>
@@ -24,7 +34,7 @@ const newPayment = () => {
           <input type="text" id="sName" name="sName" />
           <br />
           <label>mobile</label>
-          <input type="text" id="mobile" name="mobile" />
+          <input type="tel" id="mobile" name="mobile" />
           <br />
           <label>email</label>
           <input type="email" id="email" name="email" />
@@ -46,6 +56,7 @@ const newPayment = () => {
           </button>
         </form>
       </div>
+      <div id="result"></div>
     </div>
   );
 };

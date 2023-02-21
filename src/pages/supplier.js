@@ -35,7 +35,7 @@ const supplier = () => {
     }
     table += "</table>";
     //document.getElementById("supplierTable").innerHTML = table;
-    document.getElementById("supplierTable").append(table);
+    document.getElementById("supplierTable").innerHTML=table;
   }
   //})
   return (

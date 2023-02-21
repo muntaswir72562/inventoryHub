@@ -20,6 +20,8 @@
         </xs:simpleType> -->
 <!-- Minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character:
   ^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$ -->
+
+  
 <xs:complexType name="addressType">
     <xs:sequence>
         <xs:element name="streetName" type="xs:string" />
