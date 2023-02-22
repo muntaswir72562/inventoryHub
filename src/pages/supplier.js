@@ -2,19 +2,22 @@ import Header from "../components/header";
 
 const supplier = () => {
   //document.addEventListener("DOMContentLoaded", function() {
+
   let xhttp = new XMLHttpRequest();
+  xhttp.open("GET", "/data/supplier.xml", true);
+  xhttp.send();
   xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
       display(this);
+      response(this);
     }
   };
-  xhttp.open("GET", "/data/supplier.xml", true);
-  xhttp.send();
+ console.log(response)
   function display(xml) {
     let xmlDoc = xml.responseXML;
     //console.log(xmlDoc);
     let table =
-      "<table><tr><th>Short Code</th><th>Company Name</th><th>Phone Number</th><th>Address</th></tr>";
+      "<table><tr><th>Short Code</th><th>Company Name</th><th>Phone Number</th><th>Address</th><th>Actions</th></tr>";
 
     let x = xmlDoc.getElementsByTagName("Supplier");
     for (let i = 0; i < x.length; i++) {
@@ -37,7 +40,8 @@ const supplier = () => {
     //document.getElementById("supplierTable").innerHTML = table;
     document.getElementById("supplierTable").innerHTML=table;
   }
-  //})
+
+  
   return (
     <div>
       <div className="lg:flex lg:items-center lg:justify-between mx-20">
@@ -47,7 +51,17 @@ const supplier = () => {
           {/* <a href="">New invoice</a> */}
         </button>
       </div>
+      <div>
       <div id="supplierTable"></div>
+      <div>
+
+      <input type="text" id="shortCode" placeholder="Short Code"/>
+      <input type="text" id="companyName" placeholder="Company Name"/>
+      <input type="tel" id="tel" placeholder="Phone Number"/>
+      <input type="text" id="address" placeholder="Address"/>
+      {/* <button onClick={add}>Add</button> */}
+      </div>
+      </div>
     </div>
   );
 };
