@@ -1,10 +1,36 @@
 import Header from "../../components/header";
 const newSupplier = () => {
+  function sendData(e) {
+    e.preventDefault();
 
-    function sendData(){
-        let formData = new FormData(document.getElementById("newSupplier"))
-        console.log(formData)
+    let xhttp = new XMLHttpRequest();
+    xhttp.open("GET", "/data/supplier.xml", true);
+    xhttp.send();
+    xhttp.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        write(this);
+      }
+    };
+    function write(xml) {
+      let xmlDoc = xml.responseXML;
+      //console.log(data)
+      let newPerson = xmlDoc.createElement("person");
+      newPerson.setAttribute("name", "Bob");
+      newPerson.setAttribute("age", "35");
+
+      // Add the new person element to the root element
+      //xmlDoc.getElementsByTagName("root")[0].appendChild(newPerson);
+      
+
+      // Save the updated XML file
+      let serializer = new XMLSerializer();
+      let xmlString = serializer.serializeToString(xmlDoc);
+      let fs = new ActiveXObject("Scripting.FileSystemObject");
+      let file = fs.CreateTextFile("data.xml", true);
+      file.writeLine(xmlString);
+      file.close();
     }
+  }
   return (
     <>
       <div>
@@ -16,12 +42,7 @@ const newSupplier = () => {
           {/* </button> */}
         </div>
         <div>
-          <form
-            name="newSupplier"
-            id="newSupplier"
-            action="newSupplier.php"
-            method="POST"
-          >
+          <form name="newSupplier" id="newSupplier">
             <label>firstName</label>
             <input type="text" id="fName" />
             <br />
