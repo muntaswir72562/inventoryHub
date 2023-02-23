@@ -98,13 +98,13 @@ const supplier = () => {
     // console.log(cname);
     // console.log(pNum);
     // console.log(addressVal);
+    document.getElementById("updateElem").innerHTML=""
   }
 
   function Display() {
     let table =
       "<table id='sTable'><tr><th>Short Code</th><th>Company Name</th><th>Phone Number</th><th>Address</th><th>Actions</th></tr>";
-
-    let x = xmlDoc.getElementsByTagName("Supplier");
+      let x = xmlDoc.getElementsByTagName("Supplier");
     console.log(x)
     for (let i = 0; i < x.length; i++) {
       let row =
