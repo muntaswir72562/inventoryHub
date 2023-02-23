@@ -12,4 +12,4 @@ export function getXHRData(url, callback) {
       }
     };
     xhr.send();
-  }
+  }  
