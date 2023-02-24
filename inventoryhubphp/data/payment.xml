@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  -->
+<payments xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="payment.xsd">
+    <payment>
+        <date>2023-01-30</date>
+        <supplierName>Nike</supplierName>
+        <contact>
+            <mobile>12345689</mobile>
+            <email>nike@gmail.com</email>
+        </contact>
+        <invoice id="inv001" />
+        <amount>50000</amount>
+        <status>paid</status>
+        <method type="cash" />
+    </payment>
+
+    <payment>
+        <date>2023-01-30</date>
+        <supplierName>Nike</supplierName>
+        <contact>
+            <mobile>12345689</mobile>
+            <email>nike@gmail.com</email>
+        </contact>
+        <invoice id="inv001" />
+        <amount>50000</amount>
+        <status>paid</status>
+        <method type="internet banking">
+            <receiptId>65765464</receiptId>
+        </method>
+
+    </payment>
+    <payment>
+        <date>2023-01-30</date>
+        <supplierName>Puma</supplierName>
+        <contact>
+            <mobile>12345689</mobile>
+            <email>Puma@gmail.com</email>
+        </contact>
+        <invoice id="inv001" />
+        <amount>50000</amount>
+        <status>paid</status>
+        <method type="cheque">
+            <bank>
+                <name>mcb</name>
+                <address>pl</address>
+            </bank>
+            <chequeNumber>656646464</chequeNumber>
+            <routingNumber>123</routingNumber>
+        </method>
+
+    </payment>
+
+</payments>
