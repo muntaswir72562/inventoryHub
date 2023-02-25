@@ -124,7 +124,7 @@ const supplier = () => {
 
         "</td><td><button id='" +
         i +
-        "'>Delete</button><button id='" +
+        "'>Delete</button><br/><button id='" +
         i +
         "'>Update</button></td></tr>";
       table += row;
