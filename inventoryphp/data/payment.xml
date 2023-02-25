@@ -3,63 +3,11 @@
 xsi:noNamespaceSchemaLocation="payment.xsd" -->
 <payments>
     <payment>
-        <date>2023-01-30</date>
-        <supplierName>muuun</supplierName>
-        <contact>
-            <mobile>12345689</mobile>
-            <email>nike@gmail.com</email>
-        </contact>
-        <invoice id="inv001"/>
-        <amount>50000</amount>
-        <status>paid</status>
-        <method type="cash"/>
+        <date>1976-04-10</date>
+        <supplierName>Wang Barber</supplierName>
+        <invoice id="Harum architecto sit" />
+        <amount>69</amount>
+        <status>Et libero hic non eu</status>
+        <method type="Pariatur Eum qui se" />
     </payment>
-
-    <payment>
-        <date>2023-01-30</date>
-        <supplierName>Nike</supplierName>
-        <contact>
-            <mobile>12345689</mobile>
-            <email>nike@gmail.com</email>
-        </contact>
-        <invoice id="inv001"/>
-        <amount>50000</amount>
-        <status>paid</status>
-        <method type="internet banking">
-            <receiptId>65765464</receiptId>
-        </method>
-
-    </payment>
-    <payment>
-        <date>2023-01-30</date>
-        <supplierName>Puma</supplierName>
-        <contact>
-            <mobile>12345689</mobile>
-            <email>Puma@gmail.com</email>
-        </contact>
-        <invoice id="inv001"/>
-        <amount>50000</amount>
-        <status>paid</status>
-        <method type="cheque">
-            <bank>
-                <name>mcb</name>
-                <address>pl</address>
-            </bank>
-            <chequeNumber>656646464</chequeNumber>
-            <routingNumber>123</routingNumber>
-        </method>
-
-    </payment>
-
-    <payment>
-        <date>2018-05-05</date>
-        <supplierName>Daquan Dillon</supplierName>
-        <invoice id="Non commodi dolor fa"/>
-        <amount>10</amount>
-        <status>Et exercitationem ip</status>
-        <method type="Dolor quaerat id eo"/>
-    </payment>
-
-    
-    
 </payments>

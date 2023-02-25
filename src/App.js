@@ -8,7 +8,7 @@ import Payment from "./pages/payment";
 import Supplier from "./pages/supplier";
 //import PurchaseOrder from "./pages/purchaseOrder";
 //import User from "./pages/user";
-//import Product from "./pages/product";
+import Product from "./pages/product";
 //import SalesOrder from "./pages/salesOrder";
 
 import NewSupplier from "./pages/new/newSupplier";
@@ -32,7 +32,7 @@ function App() {
           <Route path="/supplier" element={<Supplier />} />
           {/* <Route path="/purchase" element={<PurchaseOrder />} /> */}
           {/* <Route path="/user" element={<User />} /> */}
-          {/* <Route path="/product" element={<Product />} /> */}
+          <Route path="/product" element={<Product />} />
           {/* <Route path="/sales" element={<SalesOrder />} /> */}
           <Route path="/newSupplier" element={<NewSupplier />} />
           <Route path="/newPayment" element={<NewPayment />} />
