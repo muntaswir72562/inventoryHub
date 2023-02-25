@@ -1,0 +1,753 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Sales_Orders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="purchaseOrder.xsd">
+    <Sale_Order id="SO-0224">
+        <customer>
+            <customerName>Barny</customerName>
+        </customer>
+        <date>25-12-2021</date>
+        <status>pending</status>
+        <payment>
+            <type>cheque</type>
+        </payment>
+        <item>
+            <name>Sennheiser HD 660 S</name>
+            <quantity>3</quantity>
+            <amount>$1252.87</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-0590">
+        <customer>
+            <customerName>Lenka</customerName>
+        </customer>
+        <date>06-09-2022</date>
+        <status>cancelled</status>
+        <payment>
+            <type>cheque</type>
+        </payment>
+        <item>
+            <name>Sennheiser HD 660 S</name>
+            <quantity>3</quantity>
+            <amount>$1407.75</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-0523">
+        <customer>
+            <customerName>Annabel</customerName>
+        </customer>
+        <date>28-08-2021</date>
+        <status>completed</status>
+        <payment>
+            <type>cheque</type>
+        </payment>
+        <item>
+            <name>Harman Kardon Citation 300 Smart Speaker</name>
+            <quantity>5</quantity>
+            <amount>$1708.61</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-01512">
+        <customer>
+            <customerName>Shayna</customerName>
+        </customer>
+        <date>20-04-2021</date>
+        <status>pending</status>
+        <payment>
+            <type>internet banking</type>
+        </payment>
+        <item>
+            <name>Sony Playstation 5</name>
+            <quantity>1</quantity>
+            <amount>$1588.38</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-01922">
+        <customer>
+            <customerName>Demeter</customerName>
+        </customer>
+        <date>12-06-2022</date>
+        <status>cancelled</status>
+        <payment>
+            <type>cash</type>
+        </payment>
+        <item>
+            <name>Sonos One (Gen 2)</name>
+            <quantity>5</quantity>
+            <amount>$1903.39</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-01177">
+        <customer>
+            <customerName>Juieta</customerName>
+        </customer>
+        <date>29-05-2021</date>
+        <status>completed</status>
+        <payment>
+            <type>internet banking</type>
+        </payment>
+        <item>
+            <name>Dyson V15 Vacuum</name>
+            <quantity>3</quantity>
+            <amount>$1947.01</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-0785">
+        <customer>
+            <customerName>Carlee</customerName>
+        </customer>
+        <date>26-04-2022</date>
+        <status>pending</status>
+        <payment>
+            <type>internet banking</type>
+        </payment>
+        <item>
+            <name>Linksys Velop Mesh WiFi System</name>
+            <quantity>2</quantity>
+            <amount>$1735.90</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-01631">
+        <customer>
+            <customerName>Evonne</customerName>
+        </customer>
+        <date>10-03-2022</date>
+        <status>cancelled</status>
+        <payment>
+            <type>internet banking</type>
+        </payment>
+        <item>
+            <name>Samsung Galaxy S21</name>
+            <quantity>3</quantity>
+            <amount>$1085.79</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-065">
+        <customer>
+            <customerName>Bart</customerName>
+        </customer>
+        <date>08-06-2022</date>
+        <status>completed</status>
+        <payment>
+            <type>cash</type>
+        </payment>
+        <item>
+            <name>Dyson V15 Vacuum</name>
+            <quantity>4</quantity>
+            <amount>$771.93</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-01453">
+        <customer>
+            <customerName>Vinny</customerName>
+        </customer>
+        <date>24-12-2020</date>
+        <status>cancelled</status>
+        <payment>
+            <type>cheque</type>
+        </payment>
+        <item>
+            <name>Lululemon Align Leggings</name>
+            <quantity>4</quantity>
+            <amount>$1177.51</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-01213">
+        <customer>
+            <customerName>Dario</customerName>
+        </customer>
+        <date>28-01-2023</date>
+        <status>pending</status>
+        <payment>
+            <type>cash</type>
+        </payment>
+        <item>
+            <name>Samsung Galaxy S21</name>
+            <quantity>3</quantity>
+            <amount>$1459.82</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-0888">
+        <customer>
+            <customerName>Clotilda</customerName>
+        </customer>
+        <date>06-10-2022</date>
+        <status>cancelled</status>
+        <payment>
+            <type>cash</type>
+        </payment>
+        <item>
+            <name>Patagonia Nano Puff Jacket</name>
+            <quantity>3</quantity>
+            <amount>$1760.79</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-01090">
+        <customer>
+            <customerName>Jock</customerName>
+        </customer>
+        <date>05-10-2021</date>
+        <status>completed</status>
+        <payment>
+            <type>cash</type>
+        </payment>
+        <item>
+            <name>Microsoft Surface Pro 8</name>
+            <quantity>1</quantity>
+            <amount>$457.87</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-01530">
+        <customer>
+            <customerName>Phillipp</customerName>
+        </customer>
+        <date>21-12-2021</date>
+        <status>cancelled</status>
+        <payment>
+            <type>cheque</type>
+        </payment>
+        <item>
+            <name>Bose QuietComfort 35 II</name>
+            <quantity>5</quantity>
+            <amount>$1024.34</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-01176">
+        <customer>
+            <customerName>Justus</customerName>
+        </customer>
+        <date>02-06-2022</date>
+        <status>pending</status>
+        <payment>
+            <type>internet banking</type>
+        </payment>
+        <item>
+            <name>Sonos Arc Soundbar</name>
+            <quantity>4</quantity>
+            <amount>$352.85</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-082">
+        <customer>
+            <customerName>Sophey</customerName>
+        </customer>
+        <date>25-09-2020</date>
+        <status>cancelled</status>
+        <payment>
+            <type>cheque</type>
+        </payment>
+        <item>
+            <name>Sony WH-1000XM4</name>
+            <quantity>1</quantity>
+            <amount>$1973.74</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-0170">
+        <customer>
+            <customerName>Bibbie</customerName>
+        </customer>
+        <date>25-01-2021</date>
+        <status>pending</status>
+        <payment>
+            <type>cash</type>
+        </payment>
+        <item>
+            <name>Yamaha YAS-209 Soundbar</name>
+            <quantity>4</quantity>
+            <amount>$1600.37</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-092">
+        <customer>
+            <customerName>Maure</customerName>
+        </customer>
+        <date>04-04-2020</date>
+        <status>pending</status>
+        <payment>
+            <type>cash</type>
+        </payment>
+        <item>
+            <name>Apple AirPods Pro</name>
+            <quantity>1</quantity>
+            <amount>$1313.30</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-0855">
+        <customer>
+            <customerName>Janie</customerName>
+        </customer>
+        <date>29-04-2021</date>
+        <status>pending</status>
+        <payment>
+            <type>cash</type>
+        </payment>
+        <item>
+            <name>Bowers &amp; Wilkins PX7 Headphones</name>
+            <quantity>1</quantity>
+            <amount>$1241.69</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-01865">
+        <customer>
+            <customerName>Lynelle</customerName>
+        </customer>
+        <date>23-04-2020</date>
+        <status>completed</status>
+        <payment>
+            <type>internet banking</type>
+        </payment>
+        <item>
+            <name>LG CX Series OLED TV</name>
+            <quantity>4</quantity>
+            <amount>$1945.90</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-01036">
+        <customer>
+            <customerName>Rand</customerName>
+        </customer>
+        <date>06-07-2022</date>
+        <status>completed</status>
+        <payment>
+            <type>cheque</type>
+        </payment>
+        <item>
+            <name>Sony X900H 65-Inch TV</name>
+            <quantity>3</quantity>
+            <amount>$1386.08</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-01524">
+        <customer>
+            <customerName>Karlie</customerName>
+        </customer>
+        <date>15-03-2021</date>
+        <status>completed</status>
+        <payment>
+            <type>internet banking</type>
+        </payment>
+        <item>
+            <name>Sony Playstation 5</name>
+            <quantity>2</quantity>
+            <amount>$1536.39</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-0819">
+        <customer>
+            <customerName>Grantham</customerName>
+        </customer>
+        <date>24-09-2022</date>
+        <status>cancelled</status>
+        <payment>
+            <type>internet banking</type>
+        </payment>
+        <item>
+            <name>Bose QuietComfort 35 II</name>
+            <quantity>1</quantity>
+            <amount>$702.72</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-0410">
+        <customer>
+            <customerName>Adore</customerName>
+        </customer>
+        <date>25-06-2020</date>
+        <status>pending</status>
+        <payment>
+            <type>cash</type>
+        </payment>
+        <item>
+            <name>Nike Air Force 1</name>
+            <quantity>4</quantity>
+            <amount>$1300.21</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-0149">
+        <customer>
+            <customerName>Woodman</customerName>
+        </customer>
+        <date>01-08-2020</date>
+        <status>cancelled</status>
+        <payment>
+            <type>cash</type>
+        </payment>
+        <item>
+            <name>Apple Magic Keyboard</name>
+            <quantity>1</quantity>
+            <amount>$1410.90</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-0836">
+        <customer>
+            <customerName>Reta</customerName>
+        </customer>
+        <date>26-01-2022</date>
+        <status>completed</status>
+        <payment>
+            <type>cash</type>
+        </payment>
+        <item>
+            <name>Fujifilm X-T4 Mirrorless Camera</name>
+            <quantity>5</quantity>
+            <amount>$1361.21</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-0307">
+        <customer>
+            <customerName>Clem</customerName>
+        </customer>
+        <date>11-01-2021</date>
+        <status>cancelled</status>
+        <payment>
+            <type>cash</type>
+        </payment>
+        <item>
+            <name>Apple MacBook Air (M1)</name>
+            <quantity>4</quantity>
+            <amount>$265.09</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-0345">
+        <customer>
+            <customerName>Matthieu</customerName>
+        </customer>
+        <date>07-03-2022</date>
+        <status>cancelled</status>
+        <payment>
+            <type>internet banking</type>
+        </payment>
+        <item>
+            <name>North Face Venture Jacket</name>
+            <quantity>2</quantity>
+            <amount>$1983.78</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-0821">
+        <customer>
+            <customerName>Jacki</customerName>
+        </customer>
+        <date>26-01-2021</date>
+        <status>cancelled</status>
+        <payment>
+            <type>cash</type>
+        </payment>
+        <item>
+            <name>Bose Soundbar 700</name>
+            <quantity>3</quantity>
+            <amount>$1871.35</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-01295">
+        <customer>
+            <customerName>Siobhan</customerName>
+        </customer>
+        <date>12-07-2020</date>
+        <status>pending</status>
+        <payment>
+            <type>cheque</type>
+        </payment>
+        <item>
+            <name>Apple MacBook Air (M1)</name>
+            <quantity>1</quantity>
+            <amount>$624.65</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-0934">
+        <customer>
+            <customerName>Carolyne</customerName>
+        </customer>
+        <date>16-07-2021</date>
+        <status>cancelled</status>
+        <payment>
+            <type>cash</type>
+        </payment>
+        <item>
+            <name>Levi's 501 Jeans</name>
+            <quantity>4</quantity>
+            <amount>$1353.92</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-01319">
+        <customer>
+            <customerName>Janetta</customerName>
+        </customer>
+        <date>22-06-2022</date>
+        <status>completed</status>
+        <payment>
+            <type>cash</type>
+        </payment>
+        <item>
+            <name>Fujifilm X-T4 Mirrorless Camera</name>
+            <quantity>2</quantity>
+            <amount>$222.41</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-0804">
+        <customer>
+            <customerName>Fanchette</customerName>
+        </customer>
+        <date>23-11-2021</date>
+        <status>pending</status>
+        <payment>
+            <type>cash</type>
+        </payment>
+        <item>
+            <name>Fitbit Versa 3</name>
+            <quantity>4</quantity>
+            <amount>$779.42</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-01098">
+        <customer>
+            <customerName>Orson</customerName>
+        </customer>
+        <date>05-01-2021</date>
+        <status>cancelled</status>
+        <payment>
+            <type>cheque</type>
+        </payment>
+        <item>
+            <name>Razer Blade 15</name>
+            <quantity>3</quantity>
+            <amount>$1063.24</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-01761">
+        <customer>
+            <customerName>Barn</customerName>
+        </customer>
+        <date>08-01-2022</date>
+        <status>pending</status>
+        <payment>
+            <type>cash</type>
+        </payment>
+        <item>
+            <name>Samsung 55-Inch QLED TV</name>
+            <quantity>3</quantity>
+            <amount>$1113.61</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-01113">
+        <customer>
+            <customerName>Lynelle</customerName>
+        </customer>
+        <date>22-11-2022</date>
+        <status>cancelled</status>
+        <payment>
+            <type>cash</type>
+        </payment>
+        <item>
+            <name>GoPro HERO9 Black</name>
+            <quantity>3</quantity>
+            <amount>$673.04</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-0435">
+        <customer>
+            <customerName>Helge</customerName>
+        </customer>
+        <date>08-11-2022</date>
+        <status>completed</status>
+        <payment>
+            <type>cash</type>
+        </payment>
+        <item>
+            <name>LG C1 Series OLED TV</name>
+            <quantity>5</quantity>
+            <amount>$1326.00</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-0421">
+        <customer>
+            <customerName>Emelina</customerName>
+        </customer>
+        <date>22-03-2022</date>
+        <status>completed</status>
+        <payment>
+            <type>internet banking</type>
+        </payment>
+        <item>
+            <name>Timberland 6-Inch Premium Boots</name>
+            <quantity>3</quantity>
+            <amount>$1293.91</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-01076">
+        <customer>
+            <customerName>Fianna</customerName>
+        </customer>
+        <date>10-02-2022</date>
+        <status>pending</status>
+        <payment>
+            <type>cash</type>
+        </payment>
+        <item>
+            <name>Harman Kardon Citation 300 Smart Speaker</name>
+            <quantity>5</quantity>
+            <amount>$457.37</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-01253">
+        <customer>
+            <customerName>Lucas</customerName>
+        </customer>
+        <date>21-04-2020</date>
+        <status>cancelled</status>
+        <payment>
+            <type>cheque</type>
+        </payment>
+        <item>
+            <name>Canon EF 70-200mm f/2.8L IS III USM Lens</name>
+            <quantity>5</quantity>
+            <amount>$368.49</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-01839">
+        <customer>
+            <customerName>Lori</customerName>
+        </customer>
+        <date>10-11-2021</date>
+        <status>cancelled</status>
+        <payment>
+            <type>cash</type>
+        </payment>
+        <item>
+            <name>Apple Watch Series 7</name>
+            <quantity>3</quantity>
+            <amount>$900.89</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-0504">
+        <customer>
+            <customerName>Camala</customerName>
+        </customer>
+        <date>10-01-2023</date>
+        <status>pending</status>
+        <payment>
+            <type>internet banking</type>
+        </payment>
+        <item>
+            <name>Dell Alienware m15</name>
+            <quantity>1</quantity>
+            <amount>$1532.48</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-0351">
+        <customer>
+            <customerName>Sissie</customerName>
+        </customer>
+        <date>18-09-2020</date>
+        <status>completed</status>
+        <payment>
+            <type>cash</type>
+        </payment>
+        <item>
+            <name>Anker PowerPort III Nano Charger</name>
+            <quantity>4</quantity>
+            <amount>$1918.77</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-01098">
+        <customer>
+            <customerName>Janeva</customerName>
+        </customer>
+        <date>24-06-2020</date>
+        <status>pending</status>
+        <payment>
+            <type>cash</type>
+        </payment>
+        <item>
+            <name>Harman Kardon Citation 300 Smart Speaker</name>
+            <quantity>2</quantity>
+            <amount>$145.10</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-01423">
+        <customer>
+            <customerName>Perrine</customerName>
+        </customer>
+        <date>02-07-2022</date>
+        <status>cancelled</status>
+        <payment>
+            <type>cash</type>
+        </payment>
+        <item>
+            <name>Nintendo Switch</name>
+            <quantity>5</quantity>
+            <amount>$383.34</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-0435">
+        <customer>
+            <customerName>Clotilda</customerName>
+        </customer>
+        <date>17-12-2022</date>
+        <status>completed</status>
+        <payment>
+            <type>cash</type>
+        </payment>
+        <item>
+            <name>Fitbit Versa 3</name>
+            <quantity>3</quantity>
+            <amount>$63.41</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-01497">
+        <customer>
+            <customerName>Nerissa</customerName>
+        </customer>
+        <date>17-12-2022</date>
+        <status>pending</status>
+        <payment>
+            <type>cheque</type>
+        </payment>
+        <item>
+            <name>GoPro HERO9 Black</name>
+            <quantity>4</quantity>
+            <amount>$181.40</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-01580">
+        <customer>
+            <customerName>Colin</customerName>
+        </customer>
+        <date>18-05-2022</date>
+        <status>pending</status>
+        <payment>
+            <type>cash</type>
+        </payment>
+        <item>
+            <name>Razer Blade 15</name>
+            <quantity>1</quantity>
+            <amount>$1274.66</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-01901">
+        <customer>
+            <customerName>Warner</customerName>
+        </customer>
+        <date>12-06-2021</date>
+        <status>cancelled</status>
+        <payment>
+            <type>cash</type>
+        </payment>
+        <item>
+            <name>Apple MacBook Air (M1)</name>
+            <quantity>2</quantity>
+            <amount>$1325.69</amount>
+        </item>
+    </Sale_Order>
+    <Sale_Order id="SO-0558">
+        <customer>
+            <customerName>Andreana</customerName>
+        </customer>
+        <date>06-07-2020</date>
+        <status>cancelled</status>
+        <payment>
+            <type>cheque</type>
+        </payment>
+        <item>
+            <name>Patagonia Nano Puff Jacket</name>
+            <quantity>2</quantity>
+            <amount>$1130.78</amount>
+        </item>
+    </Sale_Order>
+</Sales_Orders>

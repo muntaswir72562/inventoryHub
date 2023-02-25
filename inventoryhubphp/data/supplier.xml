@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Suppliers>
+    <Supplier id="1">
+        <short_code code="S31"/>
+        <supplier_information>
+            <first_name>Jobie</first_name>
+            <last_name>Lydster</last_name>
+            <dob>09/04/2004</dob>
+            <email>jlydster0@hibu.com</email>
+        </supplier_information>
+        <contact_details>
+            <phone_number>(158) 5967952</phone_number>
+            <office_number/>
+            <fax>+54 (385) 859-2159</fax>
+        </contact_details>
+        <company_information>
+            <brn>5290494413</brn>
+            <company_name>Thompson and Sons</company_name>
+            <address>856 Golf Center</address>
+        </company_information>
+        <vat>39-503-4735</vat>
+        <vatable>true</vatable>
+        <payment_terms>cash</payment_terms>
+    </Supplier>
+    <Supplier id="2">
+        <short_code code="S63"/>
+        <supplier_information>
+            <first_name>Gates</first_name>
+            <last_name>Lidgey</last_name>
+            <dob>24/08/2011</dob>
+            <email>glidgey1@nba.com</email>
+        </supplier_information>
+        <contact_details>
+            <phone_number>(260) 3531259</phone_number>
+            <office_number/>
+            <fax>+992 (975) 502-2708</fax>
+        </contact_details>
+        <company_information>
+            <brn>2446153399</brn>
+            <company_name>Mitchell-Schmeler</company_name>
+            <address>42 Spaight Alley</address>
+        </company_information>
+        <vat>56-536-1050</vat>
+        <vatable>false</vatable>
+        <payment_terms>internet banking</payment_terms>
+    </Supplier>
+    <Supplier id="3">
+        <short_code code="S74"/>
+        <supplier_information>
+            <first_name>Hunter</first_name>
+            <last_name>Drews</last_name>
+            <dob>27/12/2013</dob>
+            <email>hdrews2@irs.gov</email>
+        </supplier_information>
+        <contact_details>
+            <phone_number>(260) 3531259</phone_number>
+            <office_number/>
+            <fax/>
+        </contact_details>
+        <company_information>
+            <brn>6164294185</brn>
+            <company_name>Stokes, Beahan and O'Keefe</company_name>
+            <address>33592 Burrows Trail</address>
+        </company_information>
+        <vat>84-969-9500</vat>
+        <vatable>false</vatable>
+        <payment_terms>cheque</payment_terms>
+    </Supplier>
+    <Supplier id="4">
+        <short_code code="S27"/>
+        <supplier_information>
+            <first_name>Charlotta</first_name>
+            <last_name>Chadburn</last_name>
+            <dob>15/12/2009</dob>
+            <email>cchadburn3@ox.ac.uk</email>
+        </supplier_information>
+        <contact_details>
+            <phone_number>(260) 3531259</phone_number>
+            <office_number/>
+            <fax/>
+        </contact_details>
+        <company_information>
+            <brn>7156057030</brn>
+            <company_name>Lesch, Kohler and Becker</company_name>
+            <address>45 Roxbury Way</address>
+        </company_information>
+        <vat>11-081-0037</vat>
+        <vatable>true</vatable>
+        <payment_terms>internet banking</payment_terms>
+    </Supplier>
+    <Supplier id="5">
+        <short_code code="S74"/>
+        <supplier_information>
+            <first_name>Wilt</first_name>
+            <last_name>Marginson</last_name>
+            <dob>12/06/2012</dob>
+            <email>wmarginson4@bandcamp.com</email>
+        </supplier_information>
+        <contact_details>
+            <phone_number>(425) 4627574</phone_number>
+            <office_number>(394) 2699022</office_number>
+            <fax/>
+        </contact_details>
+        <company_information>
+            <brn>4206109125</brn>
+            <company_name>O'Keefe-Sipes</company_name>
+            <address>12759 Delaware Pass</address>
+        </company_information>
+        <vat>84-731-1433</vat>
+        <vatable>true</vatable>
+        <payment_terms>cash</payment_terms>
+    </Supplier>
+    <Supplier id="6">
+        <short_code code="S50"/>
+        <supplier_information>
+            <first_name>Xenia</first_name>
+            <last_name>Labroue</last_name>
+            <dob>02/10/1999</dob>
+            <email>xlabroue5@marriott.com</email>
+        </supplier_information>
+        <contact_details>
+            <phone_number>(317) 3599143</phone_number>
+            <office_number/>
+            <fax/>
+        </contact_details>
+        <company_information>
+            <brn>9571237612</brn>
+            <company_name>Greenholt-Mayert</company_name>
+            <address>39558 Blue Bill Park Alley</address>
+        </company_information>
+        <vat>59-523-0366</vat>
+        <vatable>true</vatable>
+        <payment_terms>cash</payment_terms>
+    </Supplier>
+</Suppliers>

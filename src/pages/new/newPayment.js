@@ -34,6 +34,7 @@ const newPayment = () => {
           <input type="text" id="sName" name="sName" />
           <br />
           <label>mobile</label>
+
           <input type="tel" id="mobile" name="mobile" />
           <br />
           <label>email</label>

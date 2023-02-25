@@ -11,9 +11,41 @@
   @apply mx-5 text-xl text-[#1F7A8C];
 }
 .menu__item__link {
-  @apply flex items-center;
+  @apply flex items-center text-gray-500;
 }
 
-.container {
-  @apply bg-gray-300 w-full my-6 p-3;
+.menu__item__title {
+  @apply font-semibold;
+}
+
+.container__wrapper {
+  @apply grid grid-cols-3 gap-3 grid-rows-3;
+}
+
+.overview__title {
+  @apply p-5 text-lg font-bold text-gray-500;
+}
+
+.overview__container {
+  @apply p-4 grid grid-cols-2;
+}
+
+.card {
+  @apply flex items-center p-2;
+}
+
+.card__icon {
+  @apply w-10 h-10;
+}
+
+.card__content {
+  @apply ml-6;
+}
+
+.card__heading {
+  @apply text-gray-400 font-light text-sm;
+}
+
+.card__element {
+  @apply font-bold text-xl;
 }

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<users xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="user.xsd">
+    <user id="user001">
+        <name title="mr">
+            <firstName>muntaswir</firstName>
+            <lastName>waliyullah</lastName>
+        </name>
+        <email>mun@gmail.com</email>
+        <dob>26/07/01</dob>
+        <address>
+            <streetName>ave cardinal4</streetName>
+            <city>port louis</city>
+            <postalCode>11221</postalCode>
+            <country>Mauritius</country>
+        </address>
+        <password>Qw!@123456789</password>
+        This is about meee
+    </user>
+
+    <user id="user002">
+        <name title="mrs">
+            <firstName>faar</firstName>
+            <lastName>khoda</lastName>
+        </name>
+        <email>faar@gmail.com</email>
+        <dob>24/11/02</dob>
+        <address>
+            <streetName>ave unknown</streetName>
+            <city>vdp</city>
+            <postalCode>11225</postalCode>
+            <country>Mauritius</country>
+        </address>
+        <password>Qw!@123456789</password>
+    </user>
+
+    </users>
+
+    

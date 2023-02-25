@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<products xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="product.xsd">
+    <product id="p001">
+        <title>Shoes</title>
+        <description>This is a shoe</description>
+        <unitPrice>50</unitPrice>
+        <quantity>100</quantity>
+        <img src="shoe.jpeg"></img>
+    </product>
+    <product id="p001">
+        <title>Shoes</title>
+        <description>This is a shoe</description>
+        <unitPrice>50</unitPrice>
+        <quantity>100</quantity>
+        <img src="shoe.jpeg"></img>
+    </product>
+    <product id="p001">
+        <title>Shoes</title>
+        <description>This is a shoe</description>
+        <unitPrice>50</unitPrice>
+        <quantity>100</quantity>
+        <img src="shoe.jpeg"></img>
+    </product>
+</products>
