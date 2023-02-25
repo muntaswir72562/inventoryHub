@@ -11,5 +11,4 @@ export function XHRpostData(url){
         }
       };
       xhr.send();
-
 }

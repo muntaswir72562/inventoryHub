@@ -121,7 +121,7 @@ const supplier = () => {
         x[i].getElementsByTagName("address")[0].childNodes[0].nodeValue +
         "</td><td><button id='" +
         i +
-        "'>Delete</button><button id='" +
+        "'>Delete</button><br/><button id='" +
         i +
         "'>Update</button></td></tr>";
       table += row;
