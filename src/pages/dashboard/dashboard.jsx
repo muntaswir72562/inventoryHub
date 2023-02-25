@@ -1,6 +1,6 @@
 import useNewFetch from "../../hooks/useNewFetch";
 const Dashboard = () => {
-  const { data, pending } = useNewFetch("http://localhost/inventoryhub/");
+  const { data, pending } = useNewFetch("http://localhost/inventoryhubphp/");
   let total_sales = 0;
   let no_of_purchase = 0;
   let no_of_customers = 0;
