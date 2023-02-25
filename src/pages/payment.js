@@ -43,8 +43,8 @@ function deleteNode(id){
       <div className="lg:flex lg:items-center lg:justify-between mx-20">
         {Header("Payments", "Manage the store's payments")}
         <button className="bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg">
-          New Payment
-          {/* <a href="">New invoice</a> */}
+          
+          <a href="/newPayment">New Payment</a>
         </button>
       </div>
       <div id="paymentTable">
