@@ -1,4 +1,3 @@
-
 export function postData(url, data){
 return fetch(url, {
     method: "POST", // *GET, POST, PUT, DELETE, etc.

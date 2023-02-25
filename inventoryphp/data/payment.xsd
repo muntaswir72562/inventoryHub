@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:simpleType name="stsType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="paid|in process| refunded| denied" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="invType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="inv[0-9]{3}" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="pType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="cash|cheque|internet banking|credit card" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="paymentType">
+    <xs:choice>
+      <xs:sequence>
+        <xs:element name="receiptId" type="xs:integer" />
+      </xs:sequence>
+      <xs:sequence>
+        <xs:element name="bank">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="name" type="xs:string" />
+              <xs:element name="address" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="chequeNumber" type="xs:integer" />
+        <xs:element name="routingNumber" type="xs:integer" />
+      </xs:sequence>
+
+      <xs:sequence>
+
+      </xs:sequence>
+    </xs:choice>
+    <xs:attribute name="type" type="pType" />
+  </xs:complexType>
+
+  <xs:element name="payments">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="payment" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="date" type="xs:date" />
+              <xs:element name="supplierName" type="xs:string" />
+              <xs:element name="contact">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="mobile" type="xs:integer" />
+                    <xs:element name="email" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="invoice">
+                <xs:complexType>
+                  <xs:attribute name="id" type="invType" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="amount" type="xs:decimal" />
+              <xs:element name="status" type="stsType" />
+              <xs:element name="method" type="paymentType" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
