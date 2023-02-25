@@ -1,4 +1,5 @@
 import Header from "../components/header";
+
 const supplier = () => {
   function loadXMLDoc(filename) {
     let xhttp;
@@ -106,6 +107,7 @@ const supplier = () => {
       "<table id='sTable'><tr><th>Short Code</th><th>Company Name</th><th>Phone Number</th><th>Address</th><th>Actions</th></tr>";
       let x = xmlDoc.getElementsByTagName("Supplier");
     console.log(x)
+
     for (let i = 0; i < x.length; i++) {
       let row =
         "<tr><td>" +
@@ -119,6 +121,7 @@ const supplier = () => {
         "</td>" +
         "<td>" +
         x[i].getElementsByTagName("address")[0].childNodes[0].nodeValue +
+
         "</td><td><button id='" +
         i +
         "'>Delete</button><button id='" +

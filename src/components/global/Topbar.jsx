@@ -20,11 +20,11 @@ const Topbar = () => {
           />
         </div>
         <div className="profile__container w-28 bg-gray-200 rounded-full px-3 py-1.5">
-          <Link to="*" className="flex items-center">
+          <Link to="*" className="flex items-center text-gray-500">
             <div className="profile__icon">
               <FcBusinessman className="text-3xl mr-4 bg-gray-300 rounded-full" />
             </div>
-            <div className="profile__name">john</div>
+            <div className="profile__name">{}</div>
           </Link>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import Header from "../../components/header";
 const newSupplier = () => {
+
   function sendData(e) {
     e.preventDefault();
 
@@ -42,6 +43,7 @@ const newSupplier = () => {
           {/* </button> */}
         </div>
         <div>
+
           <form name="newSupplier" id="newSupplier">
             <label>firstName</label>
             <input type="text" id="fName" />
