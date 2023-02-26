@@ -4,6 +4,8 @@ const Dashboard = () => {
   let total_sales = 0;
   let no_of_purchase = 0;
   let no_of_customers = 0;
+  let no_of_sales_cancel = 0;
+  let no_of_purchase_cancel = 0;
   let no_of_suppliers = 0;
   let purchase_amount = 0;
   let revenue = 0;
@@ -23,6 +25,9 @@ const Dashboard = () => {
       no_of_customers++;
       total_sales += sale_order.quantity;
       revenueString += sale_order.amount;
+      if (sale_order.status === "cancelled") {
+        no_of_sales_cancel++;
+      }
     });
     calRevenue(revenueString);
 
@@ -33,6 +38,9 @@ const Dashboard = () => {
     data[2][0].forEach((purchase) => {
       no_of_purchase += purchase.purchase_quantity;
       purchase_amount += purchase.purchase_amount;
+      if (purchase.status === "cancelled") {
+        no_of_purchase_cancel++;
+      }
     });
     profit = revenue - cost;
 
@@ -40,14 +48,14 @@ const Dashboard = () => {
   }
 
   return (
-    <section className="container bg-gray-300 mt-7 p-3">
+    <section className="container bg-gray-300 h-full mt-9 p-3">
       <div className="container__wrapper">
-        <div className="sales__overview bg-white rounded-md col-span-2 row-span-3">
+        <div className="sales__overview bg-white rounded-md col-span-2 row-span-2">
           <p className="overview__title">Sales Overview</p>
           <div className="overview__container h-3/4 flex items-center justify-center">
             <div className="card total__sales">
               <div className="card__icon">
-                <img src="../../icons/sale.png" />
+                <img src="../../icons/sale.png" alt={" "} />
               </div>
               <div className="card__content">
                 <div className="card__heading">Total Sales</div>
@@ -56,7 +64,7 @@ const Dashboard = () => {
             </div>
             <div className="card revenue">
               <div className="card__icon">
-                <img src="../../icons/profit-up.png" />
+                <img src="../../icons/profit-up.png" alt={" "} />
               </div>
               <div className="card__content">
                 <div className="card__heading">Revenue</div>
@@ -66,7 +74,7 @@ const Dashboard = () => {
             <div className="card cost">
               {" "}
               <div className="card__icon">
-                <img src="../../icons/low-prices.png" />
+                <img src="../../icons/low-prices.png" alt={" "} />
               </div>
               <div className="card__content">
                 <div className="card__heading">Cost</div>
@@ -75,7 +83,7 @@ const Dashboard = () => {
             </div>
             <div className="card profit">
               <div className="card__icon">
-                <img src="../../icons/assets.png" />
+                <img src="../../icons/assets.png" alt={" "} />
               </div>
               <div className="card__content">
                 <div className="card__heading">Profit</div>
@@ -89,7 +97,7 @@ const Dashboard = () => {
           <div className="overview__container">
             <div className="card purchases">
               <div className="card__icon">
-                <img src="../../icons/shopping-bag.png" />
+                <img src="../../icons/shopping-bag.png" alt={" "} />
               </div>
               <div className="card__content">
                 <div className="card__heading">No of Purchase</div>
@@ -98,7 +106,7 @@ const Dashboard = () => {
             </div>
             <div className="card revenue">
               <div className="card__icon">
-                <img src="../../icons/assets.png" />
+                <img src="../../icons/assets.png" alt={" "} />
               </div>
               <div className="card__content">
                 <div className="card__heading">Cost</div>
@@ -107,12 +115,12 @@ const Dashboard = () => {
             </div>
           </div>
         </div>
-        <div className="inventory__overview bg-white rounded-md row-span-3">
+        <div className="inventory__overview bg-white rounded-md row-span-6">
           <p className="overview__title">Inventory Summary</p>
-          <div className="overview__container__overwrite h-1/2 flex flex-col justify-around px-2">
+          <div className="overview__container__overwrite ">
             <div className="card inventory">
               <div className="card__icon">
-                <img src="../../icons/logistics.png" />
+                <img src="../../icons/logistics.png" alt={" "} />
               </div>
               <div className="card__content">
                 <div className="card__heading">Quantity in Hand</div>
@@ -121,21 +129,30 @@ const Dashboard = () => {
             </div>
             <div className="card inventory__received">
               <div className="card__icon">
-                <img src="../../icons/parachute.png" />
+                <img src="../../icons/parachute.png" alt={" "} />
               </div>
               <div className="card__content">
                 <div className="card__heading">Will be Received</div>
                 <div className="card__element">{`53`}</div>
               </div>
             </div>
+            <div className="card inventory__order">
+              <div className="card__icon">
+                <img src="../../icons/shelf.png" alt={" "} />
+              </div>
+              <div className="card__content">
+                <div className="card__heading">Inventory to be Ordered</div>
+                <div className="card__element">{`20`}</div>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="users__overview bg-white rounded-md col-span-2">
+        <div className="users__overview bg-white rounded-md col-span-1 row-span-5">
           <p className="overview__title">No. of Users</p>
           <div className="overview__container">
             <div className="card users">
               <div className="card__icon">
-                <img src="../../icons/logistics.png" />
+                <img src="../../icons/logistics.png" alt={" "} />
               </div>
               <div className="card__content">
                 <div className="card__heading">Total Customers</div>
@@ -144,7 +161,7 @@ const Dashboard = () => {
             </div>
             <div className="card supplier">
               <div className="card__icon">
-                <img src="../../icons/delivery-man.png" />
+                <img src="../../icons/delivery-man.png" alt={" "} />
               </div>
               <div className="card__content">
                 <div className="card__heading">Total Suppliers</div>
@@ -152,6 +169,29 @@ const Dashboard = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="users__overview bg-white rounded-md col-span-1 row-span-5">
+          <p className="overview__title">Other Information</p>
+          <div className="overview__container__overwrite">
+            <div className="card users">
+              <div className="card__icon">
+                <img src="../../icons/shopping.png" alt={" "} />
+              </div>
+              <div className="card__content">
+                <div className="card__heading">Cancelled Sales</div>
+                <div className="card__element">{no_of_sales_cancel}</div>
+              </div>
+            </div>
+            <div className="card supplier">
+              <div className="card__icon">
+                <img src="../../icons/cancel.png" alt={" "} />
+              </div>
+              <div className="card__content">
+                <div className="card__heading">Cancelled Purchases</div>
+                <div className="card__element">{no_of_purchase_cancel}</div>
+              </div>
+            </div>
+          </div>{" "}
         </div>
       </div>
     </section>
