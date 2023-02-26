@@ -29,8 +29,8 @@ const invoice = () => {
     .catch((error) => console.error(error));
 
   return (
-    <div>
-      <div className="lg:flex lg:items-center lg:justify-between mx-20">
+    <div className="container__overwrite">
+      <div>
         {Header("Invoice", "Manage the store's invoice")}
         {/* <button className="bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg">
           New Invoice

@@ -72,7 +72,9 @@ const supplier = () => {
     <input type='text' id='upaddress' placeholder='Address' value=` +
       address +
       `/>
-    <button id=`+id+`>Save</button>`;
+    <button id=` +
+      id +
+      `>Save</button>`;
     divUpdate.innerHTML = s;
   }
   function updateNode(id) {
@@ -84,10 +86,8 @@ const supplier = () => {
     let x = xmlDoc.getElementsByTagName("Supplier");
     //console.log(x);
 
-   
-
-    console.log(x[id])
-     x[id].getElementsByTagName("short_code")[0].setAttribute("code", sc);
+    console.log(x[id]);
+    x[id].getElementsByTagName("short_code")[0].setAttribute("code", sc);
     x[id].getElementsByTagName("company_name")[0].childNodes[0].nodeValue =
       cname;
     x[id].getElementsByTagName("phone_number")[0].childNodes[0].nodeValue =
@@ -99,14 +99,14 @@ const supplier = () => {
     // console.log(cname);
     // console.log(pNum);
     // console.log(addressVal);
-    document.getElementById("updateElem").innerHTML=""
+    document.getElementById("updateElem").innerHTML = "";
   }
 
   function Display() {
     let table =
       "<table id='sTable'><tr><th>Short Code</th><th>Company Name</th><th>Phone Number</th><th>Address</th><th>Actions</th></tr>";
-      let x = xmlDoc.getElementsByTagName("Supplier");
-    console.log(x)
+    let x = xmlDoc.getElementsByTagName("Supplier");
+    console.log(x);
 
     for (let i = 0; i < x.length; i++) {
       let row =
@@ -121,10 +121,9 @@ const supplier = () => {
         "</td>" +
         "<td>" +
         x[i].getElementsByTagName("address")[0].childNodes[0].nodeValue +
-
-        "</td><td><button id='" +
+        "</td><td><button class='deleteBtn' id='" +
         i +
-        "'>Delete</button><br/><button id='" +
+        "'>Delete</button><br/><button class='updateBtn' id='" +
         i +
         "'>Update</button></td></tr>";
       table += row;
@@ -198,21 +197,20 @@ const supplier = () => {
   }
 
   return (
-    <div id="main">
-      <div className="lg:flex lg:items-center lg:justify-between mx-20">
-        {Header("Supplier", "Manage the store's suppliers")}
-      </div>
+    <div id="main" className="container__overwrite ">
+      <div>{Header("Supplier", "Manage the store's suppliers")}</div>
       <div>
         <div id="supplierTable"></div>
-
-        <div>
+        <div id="updateElem" className="flex justify-center mt-10"></div>
+        <div className="supplierInput">
           <input type="text" id="shortCode" placeholder="Short Code" />
           <input type="text" id="companyName" placeholder="Company Name" />
           <input type="tel" id="tel" placeholder="Phone Number" />
           <input type="text" id="address" placeholder="Address" />
-          <button onClick={add}>Add</button>
+          <button className="addBtn" onClick={add}>
+            Add
+          </button>
         </div>
-        <div id="updateElem"></div>
       </div>
     </div>
   );

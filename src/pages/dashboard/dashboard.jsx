@@ -48,7 +48,7 @@ const Dashboard = () => {
   }
 
   return (
-    <section className="container bg-gray-300 h-full mt-9 p-3">
+    <section className="container ">
       <div className="container__wrapper">
         <div className="sales__overview bg-white rounded-md col-span-2 row-span-2">
           <p className="overview__title">Sales Overview</p>
