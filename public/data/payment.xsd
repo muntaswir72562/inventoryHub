@@ -37,9 +37,7 @@
         <xs:element name="chequeNumber" type="xs:integer" />
         <xs:element name="routingNumber" type="xs:integer" />
       </xs:sequence>
-
       <xs:sequence>
-
       </xs:sequence>
     </xs:choice>
     <xs:attribute name="type" type="pType" />

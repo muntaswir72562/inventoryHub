@@ -6,16 +6,18 @@ $title = '';
 $price = 0; 
 $quantity = 0; 
 
-$xmlFile = "/data/tobuy.xml";
+$xmlFile = "data/tobuy.xml";
 
 if(isset($_POST['title'])){ 
     $title = $_POST['title']; 
     $price = $_POST['price']; 
     $quantity = $_POST['quantity']; 
+
 }
 
 if (file_exists($xmlFile)) {
-    $xml = new DOMDocument();
+    
+    
     $xml->load($xmlFile);
 
     $productElem = $xml->createElement('Product'); 
@@ -23,35 +25,43 @@ if (file_exists($xmlFile)) {
     $priceElem = $xml->createElement('price', $price); 
     $quantityElem = $xml->createElement('quantity', $quantity); 
 
-    $product->appendChild($titleElem); 
-    $product->appendChild($priceElem); 
-    $product->appendChild($quantityElem); 
+    $productElem->appendChild($titleElem); 
+    $productElem->appendChild($priceElem); 
+    $productElem->appendChild($quantityElem); 
 
-    $xml->documentElement->appendChild($product); 
+    $xml->documentElement->appendChild($productElem); 
 
     $xml->save($xmlFile);
     echo'ok';
 } 
 else {
 
-    echo $title; 
-    
     $xml = new DOMDocument(); 
-    $root = $xml->createElement('Products'); 
+
+    $xml = new DOMDocument();
+    $xml->encoding = 'utf-8';
+    $xml->xmlVersion = '1.0';
+    $xml->formatOutput = true;
+
+    $root = $xml->createElement('products'); 
     
-    $productElem = $xml->createElement('Product'); 
+    $productElem = $xml->createElement('product'); 
+
+    $attr_prod_id = new DOMAttr('id', 'p001');
+    $productElem->setAttributeNode($attr_prod_id);
+
     $titleElem = $xml->createElement('title', $title); 
     $priceElem = $xml->createElement('price', $price); 
     $quantityElem = $xml->createElement('quantity', $quantity); 
 
-    $product->appendChild($titleElem); 
-    $product->appendChild($priceElem); 
-    $product->appendChild($quantityElem); 
+    $productElem->appendChild($titleElem); 
+    $productElem->appendChild($priceElem); 
+    $productElem->appendChild($quantityElem); 
 
-    $xml->documentElement->appendChild($product); 
-    
+    $root->appendChild($productElem); 
+    $xml->appendChild($root); 
     $xml->save($xmlFile);
-    echo "ok"; 
+    echo "File created"; 
 }
 
 

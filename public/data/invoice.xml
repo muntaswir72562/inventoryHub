@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet href="invoice.xsl" type="text/xsl"?>
-<!-- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="invoice.xsd"  -->
-<invoices  >
+<invoices xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="invoice.xsd"  >
     <invoice id="inv002">
         <clientId>123</clientId>
         <name>

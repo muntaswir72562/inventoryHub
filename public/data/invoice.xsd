@@ -48,7 +48,11 @@
                   </xs:complexType>
                 </xs:element>
                 <xs:element name="date" type="xs:date" />
-                <xs:element name="status" type="stsType" />
+                <xs:element name="status">
+                  <xs:complexType>
+                    <xs:attribute name="sid" type="stsType"/>
+                  </xs:complexType>
+                  </xs:element>
                 <xs:element name="orders">
                   <xs:complexType>
                     <xs:sequence>
