@@ -13,11 +13,11 @@ import Supplier from "./pages/supplier";
 import Product from "./pages/product";
 //import SalesOrder from "./pages/salesOrder";
 
-
 import NewSupplier from "./pages/new/newSupplier";
 import NewPayment from "./pages/new/newPayment";
 
 import UpdatePayment from "./pages/update/updatePayment";
+import ToBuy from "./pages/ToBuy";
 
 function App() {
   return (
@@ -41,6 +41,7 @@ function App() {
 
           {/* <Route path="/updateSupplier" element={<UpdateSupplier />} /> */}
           <Route path="/updatePayment/:id" element={<UpdatePayment />} />
+          <Route path="/to-buy" element={<ToBuy />} />
         </Routes>
       </div>
     </div>

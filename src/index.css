@@ -132,3 +132,32 @@
 #table > div > table > tbody > tr > td > a {
   @apply font-bold text-[#1F7A8C];
 }
+
+.payment__form,
+.updatePayment__form {
+  @apply w-1/2 mx-auto my-20;
+}
+
+.payment__form > input {
+  @apply w-full text-center p-3 mb-1 bg-gray-300 rounded-lg;
+}
+
+#todo__form > input {
+  @apply p-2 w-1/4 outline-none bg-gray-200 mx-1 rounded-lg;
+}
+
+.updatePayment__form {
+  @apply bg-gray-200 text-center rounded-lg;
+}
+
+.updatePayment__form > label {
+  @apply m-10 font-bold;
+}
+
+.updatePayment__form > input {
+  @apply p-3 bg-gray-200 outline-none;
+}
+
+.updatePayment__form > button {
+  @apply bg-[#1F7A8C] p-2 rounded-full text-white;
+}

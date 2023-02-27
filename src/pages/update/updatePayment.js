@@ -1,5 +1,5 @@
 import { getXHRData } from "../../script/XHRgetData";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { postData } from "../../script/postData";
 import { useParams } from "react-router-dom";
 import Header from "../../components/header";
@@ -30,7 +30,7 @@ const UpdatePayment = () => {
   function sendData(e) {
     e.preventDefault();
     let formData = new FormData(document.getElementById("updatePayment"));
-    formData.append('id', id);
+    formData.append("id", id);
     postData("http://localhost/inventoryphp/updatePayment.php", formData).then(
       (data) => {
         displayResult(data);
@@ -40,22 +40,24 @@ const UpdatePayment = () => {
 
   function displayResult(data) {
     let div = document.getElementById("result");
-    if (data == "ok") {
+    if (data === "ok") {
       div.innerHTML = "<h2 color='green'>data sucessfully updated</h2>";
     } else {
       div.innerHTML = "<h2 color='red'>" + data + "</h2>";
     }
   }
   return (
-    <div>
+    <div className="container__overwrite">
       <div>
-        <div className="lg:flex lg:items-center lg:justify-between mx-20">
-          {Header("Update Payments", "Manage the store's payments")}
-        </div>
+        <div>{Header("Update Payments", "Manage the store's payments")}</div>
         <div>
-          <form name="updatePayment" id="updatePayment">
+          <form
+            name="updatePayment"
+            id="updatePayment"
+            className="updatePayment__form"
+          >
             <label>date</label>
-            <input type="date" id="date" name="date" />
+            <input type="date" id="date" name="date" placeholder="Date" />
             <br />
             <label>supplier name</label>
             <input type="text" id="sName" name="sName" />
@@ -78,7 +80,9 @@ const UpdatePayment = () => {
             <label>method</label>
             <input type="text" id="method" name="method" />
             <br />
-            <button id="btn" onClick={sendData}>Update Payment</button>
+            <button id="btn" onClick={sendData}>
+              Update Payment
+            </button>
           </form>
         </div>
         <div id="result"></div>
