@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<Sales_Orders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="purchaseOrder.xsd">
+<Sales_Orders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="sales_customer.xsd">
     <Sale_Order id="SO-0224">
         <customer>
             <customerName>Barny</customerName>
