@@ -28,7 +28,7 @@ $i=0;
 $j=1;
 $table="<table><tr><th>Date</th><th>Company Name</th><th>Invoice Id</th><th>Amount</th><th>Type</th><th>Status</th><th>Actions</th></tr>";
 foreach($xml->children() as $payment) {
-    $row.="<tr><td>".$payment->date."</td><td>".$payment->supplierName."</td><td>".$payment->invoice['id']."</td><td>".(int)$payment->amount."</td><td>".$payment->method['type']."</td><td>".$payment->status."</td><td><a href='/updatePayment/".$i."'>Update</a><br/>
+    $row.="<tr><td>".$payment->date."</td><td>".$payment->supplierName."</td><td>".$payment->invoice['id']."</td><td>".(int)$payment->amount."</td><td>".$payment->method['type']."</td><td>".$payment->status."</td><td><a class='updateBtn' href='/updatePayment/".$i."'>Update</a><br/>
     <button id='" .
         $j.
         "'>Delete</button></td></tr>";

@@ -3,7 +3,7 @@ import useFetch from "../hooks/useFetch";
 import Header from "../components/header";
 import { XHRpostData } from "../script/XHRpostData";
 const Payment = () => {
-const [tableData, setTableData] = useState("Loading");
+  const [tableData, setTableData] = useState("Loading");
 
   const Display = async () => {
     setTableData(
@@ -15,36 +15,36 @@ const [tableData, setTableData] = useState("Loading");
     Display();
   }, []);
 
-
   window.addEventListener("load", function () {
-  const wrapper = document.getElementById("paymentTable");
-  wrapper.addEventListener("click", (event) => {
-    const isButton = event.target.nodeName === "BUTTON";
-    if (!isButton) {
-      return;
-    } else {
-      const id = event.target.id;
-       let action = event.target.innerText;
-      
-      if (action === "Delete") {
-        deleteNode(id);
+    const wrapper = document.getElementById("paymentTable");
+    wrapper.addEventListener("click", (event) => {
+      const isButton = event.target.nodeName === "BUTTON";
+      if (!isButton) {
+        return;
+      } else {
+        const id = event.target.id;
+        let action = event.target.innerText;
+
+        if (action === "Delete") {
+          deleteNode(id);
+        }
       }
-    }
+    });
   });
-  })
-function deleteNode(id){
-  let url="http://localhost/inventoryphp/deletePayment.php?id="+id
-  XHRpostData(url)
-  Display();
-}
+  function deleteNode(id) {
+    let url = "http://localhost/inventoryphp/deletePayment.php?id=" + id;
+    XHRpostData(url);
+    Display();
+  }
 
   return (
-    <div>
-      <div className="lg:flex lg:items-center lg:justify-between mx-20">
+    <div className="container__overwrite">
+      <div className="flex justify-center items-center">
         {Header("Payments", "Manage the store's payments")}
-        <button className="bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg">
-          
-          <a href="/newPayment">New Payment</a>
+        <button className="w-1/6 bg-[#1F7A8C] rounded-full py-2">
+          <a className="text-white" href="/newPayment">
+            New Payment
+          </a>
         </button>
       </div>
       <div id="paymentTable">

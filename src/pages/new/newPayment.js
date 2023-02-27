@@ -21,38 +21,41 @@ const newPayment = () => {
     }
   }
   return (
-    <div>
-      <div className="lg:flex lg:items-center lg:justify-between mx-20">
-        {Header("Add New Payments", "Manage the store's new payments")}
-      </div>
+    <div className="container__overwrite">
+      <div>{Header("Add New Payments", "Manage the store's new payments")}</div>
       <div>
-        <form name="newPayment" id="newPayment">
-          <label>date</label>
+        <form name="newPayment" id="newPayment" className="payment__form">
           <input type="date" id="date" name="date" />
           <br />
-          <label>supplier name</label>
-          <input type="text" id="sName" name="sName" />
+          <input
+            type="text"
+            id="sName"
+            name="sName"
+            placeholder="Supplier Name"
+          />
           <br />
-          <label>mobile</label>
-
-          <input type="tel" id="mobile" name="mobile" />
+          <input
+            type="tel"
+            id="mobile"
+            name="mobile"
+            placeholder="Mobile Number"
+          />
           <br />
-          <label>email</label>
-          <input type="email" id="email" name="email" />
+          <input type="email" id="email" name="email" placeholder="Email" />
           <br />
-          <label>invoice</label>
-          <input type="text" id="inv" name="inv" />
+          <input type="text" id="inv" name="inv" placeholder="Invoice" />
           <br />
-          <label>amount</label>
-          <input type="number" id="amount" name="amount" />
+          <input type="number" id="amount" name="amount" placeholder="Amount" />
           <br />
-          <label>status</label>
-          <input type="text" id="sts" name="sts" />
+          <input type="text" id="sts" name="sts" placeholder="Status" />
           <br />
-          <label>method</label>
-          <input type="text" id="method" name="method" />
+          <input type="text" id="method" name="method" placeholder="Method" />
           <br />
-          <button id="btn" onClick={sendData}>
+          <button
+            className="w-full mt-5 p-3 text-[#1F7A8C]"
+            id="btn"
+            onClick={sendData}
+          >
             Add New Payment
           </button>
         </form>

@@ -27,7 +27,7 @@ class ProductController
                             $xml = simplexml_load_file($url) or die('cannot create object');
                             $compressedXMLData [] = array ($this->processXML($index, $xml)); 
                         }
-                        echo json_encode($compressedXMLData); 
+                        $xmlData = $compressedXMLData; 
                         break;
                     case 'invoice': 
                         $xmlData = simplexml_load_file('./data/invoice.xml'); 
@@ -44,13 +44,13 @@ class ProductController
                         $xml = simplexml_load_file($url) or die('cannot create object');
                         $compressedXMLData [] = array ($this->processXML($index, $xml)); 
                     }
-                    echo json_encode($compressedXMLData); 
+                    $xmlData = $compressedXMLData;
                     break;
                 }
             break; 
         }
 
-        //echo json_encode($xmlData); 
+        echo json_encode($xmlData); 
 
     }
 
@@ -68,7 +68,7 @@ class ProductController
                foreach($xml->children() as $Sale_Order){
                 $quantity = (int) $Sale_Order -> item -> quantity; 
                 $amount = (string) $Sale_Order -> item -> amount; 
-                $processedXMLData[] = array(
+                $processedXMLData[] = array( 
                     'quantity' => $quantity, 
                     'amount' => $amount
                 ); 

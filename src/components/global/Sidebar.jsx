@@ -15,16 +15,39 @@ const SideBar = () => {
               <SidebarRow path="/" Icon={RxDashboard} title="Dashboard" />
             </li>
             <li className="menu__item">
-              <SidebarRow path="/product" Icon={FiShoppingCart} title="Product" />
+              <SidebarRow
+                path="/product"
+                Icon={FiShoppingCart}
+                title="Product"
+              />
             </li>
             <li className="menu__item">
-              <SidebarRow path="/supplier" Icon={IoIosPeople} title="Supplier" />
+              <SidebarRow
+                path="/supplier"
+                Icon={IoIosPeople}
+                title="Supplier"
+              />
             </li>
             <li className="menu__item">
-              <SidebarRow path="/payment" Icon={MdOutlinePayment} title="Payment" />
+              <SidebarRow
+                path="/payment"
+                Icon={MdOutlinePayment}
+                title="Payment"
+              />
             </li>
             <li className="menu__item">
-              <SidebarRow path="/invoice" Icon={FaFileInvoiceDollar} title="Invoice" />
+              <SidebarRow
+                path="/invoice"
+                Icon={FaFileInvoiceDollar}
+                title="Invoice"
+              />
+            </li>
+            <li className="menu__item">
+              <SidebarRow
+                path="/to-buy"
+                Icon={FaFileInvoiceDollar}
+                title="To-Buy"
+              />
             </li>
           </ul>
         </div>
