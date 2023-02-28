@@ -51,4 +51,7 @@ xsi:noNamespaceSchemaLocation="payment.xsd" -->
 
     </payment>
 
-<payment><date>2006-02-06</date><supplierName>Marshall Mccoy</supplierName><invoice id="Labore in nemo maior"/><amount>77</amount><status>Id quasi commodo si</status><method type="Sunt velit ipsum ve"/></payment></payments>
+    
+    
+    
+<payment><date>1971-03-27</date><supplierName>Cade Shepard</supplierName><contact><mobile>+1 (282) 401-7101</mobile><email>moruw@mailinator.com</email></contact><invoice id="Quas lorem dolore qu"/><amount>500</amount><status>Sed non ex aliquip q</status><method type="Facilis amet anim m"/></payment></payments>

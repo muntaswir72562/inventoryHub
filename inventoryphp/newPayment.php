@@ -42,6 +42,9 @@ if (isset($_POST['sName'])) {
         $mobile_xml=$xml->createElement("mobile", $mobile);
         $email_xml=$xml->createElement("email", $email);
 
+        $contact->appendChild( $mobile_xml);
+        $contact->appendChild( $email_xml);
+
         $invoice=$xml->createElement("invoice");
         $invoice->setAttribute("id", $inv);
 
@@ -54,8 +57,7 @@ if (isset($_POST['sName'])) {
         $payment->appendChild($date_xml);
         $payment->appendChild($supplierName);
 
-        $contact->appendChild( $mobile_xml);
-        $contact->appendChild( $email_xml);
+        $payment->appendChild($contact);
 
         $payment->appendChild($invoice);
         $payment->appendChild($amount_xml);
