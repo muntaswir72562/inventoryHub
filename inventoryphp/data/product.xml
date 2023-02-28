@@ -3,24 +3,29 @@
 <products xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="product.xsd">
     <product id="p001">
-        <title>Shoes</title>
+        <title>Nike Shoes</title>
         <unitPrice>50</unitPrice>
         <quantity>5</quantity>
         <img src="shoe.jpg"></img>
         <link>shoe.html</link>
-        This is a shoe </product>
-    <product id="p001">
-        <title>Shoes</title>
+        Shoes are an essential part of our daily lives. They protect our feet from the harsh
+        elements of the ground, provide support and comfort, and also serve as a fashion statement</product>
+    <product id="p002">
+        <title>Under Armour Shoes</title>
         <unitPrice>50</unitPrice>
         <quantity>100</quantity>
         <img src="shoe.jpg"></img>
         <link>shoe.html</link>
-        This is a shoe </product>
+        Shoes come in a variety of styles, materials, and sizes, each designed to suit a particular
+        purpose or occasion. From running shoes to formal dress shoes, from sandals to boots, there
+        is a shoe for every need. </product>
     <product id="p001">
-        <title>Shoes</title>
+        <title>Jordan Shoes</title>
         <unitPrice>50</unitPrice>
         <quantity>100</quantity>
         <img src="shoe.jpg"></img>
         <link>shoe.html</link>
-        This is a shoe </product>
+        Shoes have a rich history, dating back thousands of years when people used animal hides to
+        protect their feet. Today, shoes are made using advanced technology and innovative
+        materials, making them more durable and comfortable than ever before. </product>
 </products>
