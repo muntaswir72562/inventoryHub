@@ -32,10 +32,7 @@ const invoice = () => {
     <div className="container__overwrite">
       <div>
         {Header("Invoice", "Manage the store's invoice")}
-        {/* <button className="bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg">
-          New Invoice
-        
-        </button> */}
+     
       </div>
       <div id="table"></div>
     </div>

@@ -37,8 +37,11 @@
               <xsl:if test="quantity &gt;= 10">
                 <xsl:value-of select="quantity"/>
               </xsl:if>
-
+              <br /><a href="{link}">Product Link</a>
               <xsl:apply-templates select="products/product"/>
+              <br/>
+              <strong>Description:</strong>
+              <xsl:copy-of select="text()" />
             </p>
           </div>
 
@@ -56,7 +59,7 @@
 
   </xsl:template>
 
-  <xsl:template match="quantity">
+  <!-- <xsl:template match="quantity">
     <xsl:if test="quantity &lt; 10">
       <span style="background-color:{$lightRed};">
         <xsl:value-of select="quantity"/>
@@ -65,6 +68,6 @@
     <xsl:if test="quantity &gt;= 10">
       <xsl:value-of select="quantity"/>
     </xsl:if>
-  </xsl:template>
+  </xsl:template> -->
 
 </xsl:stylesheet>

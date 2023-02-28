@@ -1,13 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<!--  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:noNamespaceSchemaLocation="payment.xsd" -->
 <payments>
     <payment>
-        <date>1976-04-10</date>
-        <supplierName>Wang Barber</supplierName>
-        <invoice id="Harum architecto sit" />
-        <amount>69</amount>
-        <status>Et libero hic non eu</status>
-        <method type="Pariatur Eum qui se" />
+        <date>2023-01-30</date>
+        <supplierName>Nike</supplierName>
+        <contact>
+            <mobile>12345689</mobile>
+            <email>nike@gmail.com</email>
+        </contact>
+        <invoice id="inv001"/>
+        <amount>50000</amount>
+        <status>paid</status>
+        <method type="cash"/>
     </payment>
-</payments>
+
+    <payment>
+        <date>2023-01-30</date>
+        <supplierName>Nike</supplierName>
+        <contact>
+            <mobile>12345689</mobile>
+            <email>nike@gmail.com</email>
+        </contact>
+        <invoice id="inv001"/>
+        <amount>50000</amount>
+        <status>paid</status>
+        <method type="internet banking">
+            <receiptId>65765464</receiptId>
+        </method>
+
+    </payment>
+    <payment>
+        <date>2023-01-30</date>
+        <supplierName>Puma</supplierName>
+        <contact>
+            <mobile>12345689</mobile>
+            <email>Puma@gmail.com</email>
+        </contact>
+        <invoice id="inv001"/>
+        <amount>50000</amount>
+        <status>paid</status>
+        <method type="cheque">
+            <bank>
+                <name>mcb</name>
+                <address>pl</address>
+            </bank>
+            <chequeNumber>656646464</chequeNumber>
+            <routingNumber>123</routingNumber>
+        </method>
+
+    </payment>
+
+<payment><date>2006-02-06</date><supplierName>Marshall Mccoy</supplierName><invoice id="Labore in nemo maior"/><amount>77</amount><status>Id quasi commodo si</status><method type="Sunt velit ipsum ve"/></payment></payments>

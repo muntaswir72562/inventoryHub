@@ -36,7 +36,7 @@ if (file_exists($xmlFile)) {
 } 
 else {
 
-    $xml = new DOMDocument(); 
+    //$xml = new DOMDocument(); 
 
     $xml = new DOMDocument();
     $xml->encoding = 'utf-8';

@@ -101,17 +101,17 @@
 .supplierInput > input {
   @apply outline-none;
 }
-.addBtn,
+/* .addBtn,
 .updateBtn {
   @apply bg-[#1F7A8C] rounded-full px-6 py-1 text-white;
-}
+} */
 #sTable button {
   @apply rounded-full px-2 m-2;
 }
 
-.deleteBtn {
+/* .deleteBtn {
   @apply bg-[#1F7A8C] text-white border-none;
-}
+} */
 
 #updateElem > input {
   @apply outline-none;
