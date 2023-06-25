@@ -12,14 +12,22 @@ You should have Node.js already install. If you don't have Node.js, download it 
 ## Project Installation
 To install this project, follow thses steps:
 In the project directory, open terminal and type the following command:
-### `npm install `
-### `npm i react-icons react-router-dom@6 `
-### `npm i tailwindcss@latest postcss@latest autoprefixer@latest `
+```bash 
+npm install 
+```
+```bash 
+npm i react-icons react-router-dom@6 
+```
+```bash
+ npm i tailwindcss@latest postcss@latest autoprefixer@latest 
+ ```
 
 The folder inventoryhubphp and inventoryphp should be on on a server(xampp{in htdocs} or devserver)
 
 ## Running the project
 Start your server and type the following command on your terminal:
-### `npm run start `
+```bash 
+npm run start 
+```
 
 
